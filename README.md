@@ -1,2 +1,2 @@
 # translator_bot
-telegram translator bot
+телеграмм бот переводчик

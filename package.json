@@ -1,0 +1,25 @@
+{
+  "name": "translator_bot",
+  "version": "1.0.0",
+  "description": "telegram bot transleter",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start-dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thk4x4/translator_bot.git"
+  },
+  "author": "Alexandr Evdokimov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thk4x4/translator_bot/issues"
+  },
+  "homepage": "https://github.com/thk4x4/translator_bot#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "telegraf": "^3.38.0"
+  }
+}
