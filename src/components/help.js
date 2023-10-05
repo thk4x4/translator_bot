@@ -1,5 +1,5 @@
-module.exports = () => async (ctx)=>{
-    ctx.reply(`
+module.exports = () => async (ctx) => {
+  ctx.reply(`
   /from - выбрать язык
   /to - выбрать язык на который нужно переводить
 
@@ -10,4 +10,4 @@ module.exports = () => async (ctx)=>{
   ru - Russian 
   en - English 
   `);
-  }
+}
