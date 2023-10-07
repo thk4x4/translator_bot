@@ -12,7 +12,8 @@ const helpCommand = require('./components/help')
 //scenes
 const fromScene = require('./scenes/from');
 const toScene = require('./scenes/to');
-
+//service
+const translate = require('./service/translate')
 const init = async (bot, config) => {
 //stage, scenes
   const stage = new Stage([fromScene, toScene]);
@@ -25,6 +26,12 @@ const init = async (bot, config) => {
   bot.command('from', (ctx) => ctx.scene.enter('from'))
   bot.command('to', (ctx) => ctx.scene.enter('to'))
   bot.command('lang', ctx=>ctx.reply(`${ctx.session.from} - ${ctx.session.to}`))
+  bot.on('message', async ctx=>{
+    const result = await translate(ctx.message.text,
+    ctx.session.from, ctx.session.to);
+    console.log(result);
+    return ctx.reply('Привет');
+  })
   return bot;
 }
 

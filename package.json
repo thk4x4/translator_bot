@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/thk4x4/translator_bot#readme",
   "dependencies": {
+    "axios": "^1.5.1",
     "dotenv": "^16.3.1",
     "telegraf": "^3.38.0",
     "telegraf-session-local": "^2.1.1"
